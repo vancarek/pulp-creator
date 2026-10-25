@@ -50,7 +50,7 @@ Product design and roadmap: [`docs/PLAN.md`](./docs/PLAN.md).
   for headings/labels (stands in for Verlag Condensed / Myriad Pro Bold
   Cond), Source Sans 3 for text (Myriad's open sibling), Rye for the logo.
 - `.pulp-heading` / `SectionHeading` for section titles, `ValueBox` for
-  every value/½/⅕ box. Section names and skill names match the printed
+  every value box (full value only, no half/fifth). Section names and skill names match the printed
   sheet exactly.
 - `src/components/ui/` holds shadcn-generated primitives. The shadcn
   registry may be unreachable from cloud sessions; generate with

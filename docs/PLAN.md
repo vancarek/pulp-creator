@@ -90,7 +90,7 @@ Do decyzji: czy wybrany portret znika z puli dla pozostałych postaci.
 
 UI na shadcn (`base-nova`, czyli komponenty Base UI) z motywem przeniesionym z oficjalnej polskiej karty:
 papier `#f7dbb4`, granat `#41437e`, czerwień `#d04f5a`, łososiowy pas `#e8916b`, tło z promieniami,
-nagłówki sekcji z paskami, klasyczne pola wartość/½/⅕. Czcionki: Barlow Condensed (zamiast Verlag
+nagłówki sekcji z paskami, pola z samą pełną wartością (bez ½ i ⅕). Czcionki: Barlow Condensed (zamiast Verlag
 Condensed i Myriad Pro Bold Cond), Source Sans 3 (zamiast Myriad Pro), Rye w logo. Tryb ciemny: ta sama
 karta „nocą” (granatowe tło). Dwie strony karty to dwie zakładki: Badacz i Historia.
 
