@@ -7,7 +7,9 @@ export function AppShell() {
         <div className="mx-auto flex h-14 max-w-6xl items-center px-4">
           <Link
             to="/"
-            className="font-logo text-2xl text-pulp-red [-webkit-text-stroke:1px_var(--paper)] [paint-order:stroke_fill] [text-shadow:2px_2px_0_#000]"
+            // Same style as the section headings; on the navy bar the outline
+            // and drop go a darker navy so they still read.
+            className="pulp-heading text-3xl leading-none [--heading-stroke:#15163a]"
           >
             Pulp Cthulhu
           </Link>
