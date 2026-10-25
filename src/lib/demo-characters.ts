@@ -1,0 +1,77 @@
+// A sample character until the app reads the data repository. Kept as raw
+// JSON-like data, so it goes through the same parsing as a repository file.
+export const DEMO_CHARACTERS: unknown[] = [
+  {
+    slug: "przyklad",
+    origin: "new",
+    name: "Eleanor Whitmore",
+    player: "Przykład",
+    occupation: "Dziennikarka",
+    archetypeId: "seeker",
+    coreCharacteristic: "INT",
+    age: 29,
+    sex: "K",
+    residence: "Boston",
+    birthplace: "Providence",
+    characteristics: {
+      S: 45,
+      KON: 55,
+      BC: 50,
+      ZR: 65,
+      WYG: 60,
+      INT: 85,
+      MOC: 55,
+      WYK: 70,
+    },
+    luck: 60,
+    skills: [
+      { id: "spostrzegawczosc", value: 65 },
+      { id: "psychologia", value: 50 },
+      { id: "korzystanie-z-bibliotek", value: 60 },
+      { id: "gadanina", value: 45 },
+      { id: "historia", value: 40 },
+      {
+        id: "jezyk-obcy-francuski",
+        label: "Język Obcy (francuski)",
+        value: 31,
+      },
+      {
+        id: "sztuka-rzemioslo-fotografia",
+        label: "Sztuka/Rzemiosło (fotografia)",
+        value: 45,
+      },
+      { id: "bron-krotka", value: 35 },
+      { id: "okultyzm", value: 25 },
+      { id: "majetnosc", value: 30 },
+    ],
+    weapons: [
+      {
+        name: "Rewolwer .32",
+        skill: 35,
+        damage: "1K8",
+        range: "15 m",
+        attacks: "1 (3)",
+        ammo: "6",
+        malfunction: "100",
+      },
+    ],
+    talentIds: [],
+    portrait: null,
+    backstory: {
+      description:
+        "Ciemne włosy spięte w kok, zawsze z notesem w kieszeni płaszcza.",
+      ideology: "Prawda zawsze wychodzi na jaw, trzeba jej tylko pomóc.",
+      significantPeople:
+        "Redaktor naczelny „Boston Globe”, który wierzy w jej talent.",
+      meaningfulLocations: "Archiwum redakcji nocą.",
+      treasuredPossessions: "Aparat Kodak po ojcu.",
+      traits: "Uparta, ciekawska, nie odpuszcza tematu.",
+    },
+    equipment: "Aparat fotograficzny, notes, latarka",
+    spendingLevel: "10 $",
+    cash: "120 $",
+    assets: "Mieszkanie w Back Bay",
+    notes: "",
+    updatedAt: "2026-10-25T00:00:00Z",
+  },
+];

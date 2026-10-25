@@ -8,12 +8,20 @@ Projekt i plan prac: [docs/PLAN.md](docs/PLAN.md).
 
 ```bash
 npm install
-npm run dev      # serwer deweloperski
-npm test         # testy reguł
-npm run build    # build produkcyjny do dist/
+npm run dev            # serwer deweloperski
+npm run test:coverage  # testy jednostkowe
+npm run test:e2e       # testy Playwright na buildzie produkcyjnym
+npm run validate       # wszystko, co sprawdza CI
 ```
+
+Struktura i konwencje jak w [maat-core](https://github.com/maat-apps/maat-core/blob/main/STRUCTURE.md);
+szczegóły w [CLAUDE.md](CLAUDE.md).
 
 ## Wdrożenie
 
-Push na `main` uruchamia `.github/workflows/deploy.yml`, który buduje aplikację i publikuje ją na GitHub Pages.
-Jednorazowo trzeba włączyć Pages: **Settings → Pages → Source: GitHub Actions**.
+Workflowy w `.github/workflows/` wywołują wspólne pipeline'y z maat-core:
+
+- `ci.yml` na każdym PR: lint, format, typecheck → testy jednostkowe i e2e → build i `npm audit`,
+- `cd.yml` po pushu na `main`: build i publikacja na GitHub Pages (przez gałąź `pages-content`).
+
+Jeśli Pages się nie włączy samo przy pierwszym wdrożeniu: **Settings → Pages → Source: GitHub Actions**.
