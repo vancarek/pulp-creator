@@ -111,6 +111,10 @@ Edycja tylko online.
 1. **Szkielet** ✅: React + Vite + TS w strukturze maat-core, model danych (Valibot), reguły z testami,
    widok karty w stylu polskiej karty postaci (shadcn + Base UI), druk do PDF, PWA, CI/CD z maat-core,
    postać przykładowa.
+   1a. **Portret i edycja** ✅: wybór portretu (6 placeholderów, zajęte przez inne postacie są
+   niedostępne) i edytor „Z Zewu do Pulp” w 6 krokach: karta Zewu, umiejętności i specjalizacje,
+   archetyp z cechą główną (rzut 1K6+13), 100 punktów archetypu, talenty i Szczęście (rzut 2K6+6),
+   historia, uzbrojenie i dobytek. Zmiany zapisują się lokalnie w IndexedDB, do czasu etapu 2.
 2. **Dane i hasła:** repo `pulp-data`, skrypt szyfrujący tokeny, odblokowanie hasłem, odczyt i zapis
    przez API GitHuba, link podglądu, portrety z repo.
 3. **Konwersja z Zewu:** formularz przepisywania karty i przeliczenia Pulp.

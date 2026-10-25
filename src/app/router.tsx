@@ -6,6 +6,14 @@ import { AppShell } from "./app-shell";
 const HomeView = lazy(() =>
   import("../views/home/home-view").then((m) => ({ default: m.HomeView })),
 );
+const PortraitView = lazy(() =>
+  import("../views/portrait/portrait-view").then((m) => ({
+    default: m.PortraitView,
+  })),
+);
+const EditView = lazy(() =>
+  import("../views/edit/edit-view").then((m) => ({ default: m.EditView })),
+);
 const CharacterView = lazy(() =>
   import("../views/character/character-view").then((m) => ({
     default: m.CharacterView,
@@ -30,6 +38,22 @@ export function AppRouter() {
             element={
               <Suspense>
                 <CharacterView />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/p/:slug/portret"
+            element={
+              <Suspense>
+                <PortraitView />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/p/:slug/edytuj"
+            element={
+              <Suspense>
+                <EditView />
               </Suspense>
             }
           />

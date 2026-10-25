@@ -38,6 +38,7 @@
   --color-pulp-red: var(--pulp-red);
   --color-salmon: var(--salmon);
   --color-chrome: var(--chrome);
+  --color-chrome-foreground: var(--chrome-foreground);
 
   --radius-sm: calc(var(--radius) - 2px);
   --radius-md: var(--radius);
@@ -57,6 +58,7 @@
   --salmon: #e8916b;
   /* Solid bars (app header, the "1930" strip): navy in both schemes. */
   --chrome: #41437e;
+  --chrome-foreground: #fbe9cc;
 
   --background: var(--paper);
   --foreground: var(--ink);
@@ -92,6 +94,7 @@
     --pulp-red: #ef6f78;
     --salmon: #e8916b;
     --chrome: #2b2a5c;
+    --chrome-foreground: #f3dcb9;
 
     --background: var(--paper);
     --foreground: var(--ink);

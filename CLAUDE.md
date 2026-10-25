@@ -66,6 +66,17 @@ Product design and roadmap: [`docs/PLAN.md`](./docs/PLAN.md).
 - Rules data in `src/lib/rules/`. `skills.ts` matches the printed sheet;
   `archetypes.ts` and `talents.ts` are drafts to verify against the book.
 
+## Editing
+
+- `src/lib/character-editor.ts` is the editor's reducer (pure, unit-tested):
+  skills split into the CoC sheet's values and the archetype's bonus on top,
+  capped at `ARCHETYPE_POINTS`. `finishEditing` rebuilds the stored skills.
+- Until stage 2, `characterStore` keeps edits in IndexedDB
+  (`@maat-apps/core/storage`) over the bundled sample; stage 2 swaps the
+  backing for the data repository without changing the views.
+- Portraits are placeholders in `src/lib/portraits.ts` (SVG silhouettes);
+  real images will come from `pulp-data/portraits/`.
+
 ## Workflow Rules
 
 - Don't re-run the full validate gate locally before pushing once CI exists
